@@ -1,0 +1,5 @@
+# 示例：将所有请求重定向到 index.html（适用于单页应用）
+redirects:
+  - from: /*
+    to: /index.html
+    status: 200
