@@ -1,5 +1,7 @@
-# 示例：将所有请求重定向到 index.html（适用于单页应用）
-redirects:
-  - from: /*
-    to: /index.html
-    status: 200
+# 如果 index.html 在根目录
+build:
+  publish: .
+
+# 如果 index.html 在 public 子目录
+# build:
+#   publish: public
