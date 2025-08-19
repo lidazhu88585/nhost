@@ -1,5 +1,8 @@
-# 示例：将所有请求重定向到 index.html（适用于单页应用）
-redirects:
-  - from: /*
-    to: /index.html
-    status: 200
+# 显式声明发布目录
+build:
+  publish: .  # 如果文件在根目录
+  # publish: public  # 如果文件在 public 子目录
+
+# 确保所有文件都被包含
+include:
+  - "**/*"
